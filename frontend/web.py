@@ -100,7 +100,7 @@ def user_input_parameters(variables_dict):
     return features
     
 def main():
-    st.title('Modelamiento de FPS by RAMITA ANDRE y John Sovero')
+    st.title('Modelamiento de FPS by Andre Pilco, John Sovero e Iam Alvarez')
     st.sidebar.header('User Input Parameters')
     
     variables_dict = loadJSON()
@@ -154,8 +154,7 @@ def main():
     
     st.subheader('User Input Parameters')
     st.subheader(model)
-    st.write(data)
-    print(data)
+
     if st.button('RUN'):
         if model == 'Random Forest':
             prediction = rf_model.predict(data)

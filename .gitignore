@@ -1,4 +1,5 @@
 *.arff
 *.csv
 env/
-*pkl
+/models/clasiffier/rf_model.pkl
+/models/regressor/rf_model_regressor.pkl
