@@ -8653,14 +8653,14 @@
         "warframe"
     ],
     "GameSetting": [
+        "low",
         "med",
         "high",
-        "low",
         "max"
     ],
     "GameResolution": [
-        1080.0,
         720.0,
+        1080.0,
         1440.0
     ]
 }
