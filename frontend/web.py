@@ -10,7 +10,7 @@ api_key = "8455d4662cfb441db06008d90d513c5d"
 
 #Extrar los archivos pickle
 def loadModels():
-    lgbm_model = joblib.load('../models/regressor/lgbm_model_regressor.pkl')
+    lgbm_model = joblib.load('./models/regressor/lgbm_model_regressor.pkl')
     return lgbm_model
     
 def get_game_info(game):
@@ -18,11 +18,11 @@ def get_game_info(game):
     return info
 
 def loadJSON():
-    with open('../data/json/variables_dict.json') as json_file:
+    with open('./data/json/variables_dict.json') as json_file:
         return json.load(json_file)
 
 def loadPipeline():
-    return joblib.load('../models/pipeline.pkl')
+    return joblib.load('./models/pipeline.pkl')
 
 def classify(num):
     if num == 0:
